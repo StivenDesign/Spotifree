@@ -21,7 +21,7 @@ jobs:
         with:
           gradle-version: 8.9
       - name: Descomprimir
-        run: unzip -q ondas-android.zip
+        run: unzip -qo ondas-android.zip
       - name: Compilar
         working-directory: ondas-android
         run: gradle assembleDebug --no-daemon
